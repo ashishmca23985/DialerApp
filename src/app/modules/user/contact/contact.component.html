@@ -1,0 +1,102 @@
+<div class="container">
+    <form [formGroup]="form" (ngSubmit)="update()">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email Address</th>
+            <th>
+              <button
+                type="button"
+                title="Add New"
+                class="btn btn-primary"
+                (click)="addUser()">
+                <i class="fas fa-user"></i>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+         
+          <ng-container *ngFor="let user of users; let i = index">
+            <tr *ngIf="userSelected != user" (click)="selectUser(user)">
+              <td>{{ user.id }}</td>
+              <td>{{ user.firstName }}</td>
+              <td>{{ user.lastName }}</td>
+              <td>{{ user.email }}</td>
+              <td>
+                <button
+                  class="btn btn-danger btn-sm mx-1"
+                  title="delete"
+                  type="button"
+                  (click)="deleteUser(i)"
+                >
+                <i class="fas fa-user-times"></i>
+                </button>
+              </td>
+            </tr>
+  
+            <tr *ngIf="userSelected == user" class="table-primary">
+              <td>{{ user.id }}</td>
+              <td>
+                <!-- <input
+                  type="text"
+                  class="form-control"
+                  formControlName="firstName"
+                  [value]="user.firstName"
+                  title="First Name"
+                  /> -->
+  
+                  <div
+                    formControlName="firstName"
+                    contenteditable
+                  >
+  
+                  </div>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="lastName"
+                  [value]="user.lastName"
+                  title="Last Name"
+                  />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="email"
+                  [value]="user.email"
+                  title="Email Address"
+                  />
+              </td>
+              <td>
+                <button
+                    class="btn btn-primary btn-sm mx-1"
+                    title="update"
+                    type="submit"
+                    [disabled]="form.invalid"
+                  >
+                    <i class="fas fa-user"></i>
+                  </button>
+  
+                  <button
+                    class="btn btn-danger btn-sm mx-1"
+                    title="cancel"
+                    (click)="cancel()"
+                    type="button"
+                  >
+                  <i class="fas fa-user-times"></i>
+                                  </button>
+              </td>
+            </tr>
+          </ng-container>
+         
+        </tbody>
+      </table>
+    </form>
+  </div>

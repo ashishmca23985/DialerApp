@@ -1,0 +1,408 @@
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-6 ">
+    <!-- Brand Logo -->
+    <a class="brand-link navbar-navy" [routerLink]="['/admin']">
+      <img src="assets/homepage/img/iSON-Xperiences-Logo_WF.png" alt="iSON Logo" class="brand-image img-circle elevation-3" 
+      style=" width: auto; height: auto;">
+      <span class="brand-text font-weight-light">i-Dialer</span>
+    </a>
+  
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+  
+       <!-- Sidebar user panel (optional) -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="image">
+        <img src="assets/dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
+      </div>
+      <div class="info">
+        <a class="d-block" [routerLink]="['/admin/profile']">Admin</a>
+      </div>
+    </div>
+
+    
+      <!-- Sidebar Menu -->
+      <nav class="mt-4">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a [routerLink]="['/admin']" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['/admin']" class="nav-link">
+                <i class="fas fa-phone nav-icon"></i>
+              <p>
+                Telephony
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/admin/user']">
+                    <i class="fas fa-users nav-icon"></i>
+                  <span>Users</span>
+                
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/admin/campaign']">
+                  <i class="fas fa-clone nav-icon"></i>
+                  <p>Campaigns</p>
+                </a>
+
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/admin/lead-list']" class="nav-link">
+                    <i class="fas fa-file nav-icon"></i>     
+                    <p>Lists</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/admin/dialing-filter']" class="nav-link">
+                  <i class="bi bi-filter  nav-icon"></i>
+                  <p>Filters</p>
+
+                  
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/admin/agent-script']" class="nav-link">
+                  <i class="fas fa-marker	nav-icon"></i>
+                  <p>Script</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/uplot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Inbound</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/uplot.html" class="nav-link">
+                  <i class="far fa-file-audio	nav-icon"></i>
+                  <p>Voice Files</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-cogs nav-icon"></i>
+              <p>
+                Setting
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/UI/general.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Call Times</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/UI/icons.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Voice Mail</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/UI/buttons.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Users Group</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/UI/sliders.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Carriers</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/UI/modals.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Servers</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/UI/navbar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Admin Logs</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">
+              <i class="fas fa-chart-bar nav-icon"></i>
+              <p>Reports</p>
+              <i class="fas fa-angle-left right"></i>
+            </a>
+
+            <ul class="nav nav-treeview">
+
+              <li class="nav-item">
+                <a  class="nav-link">
+                    <i class="fas fa-file	nav-icon"></i>
+                  <span>Agent Analysis Report</span>
+                  <i class="right fas fa-angle-left"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/general.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Agent Daily Login</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/forms/general.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Agent Weekly Login</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/forms/advanced.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manual Call</p>
+                    </a>
+                  </li>
+                </ul>
+    
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fas fa-file-alt	nav-icon"></i>
+                  <span>Process Analysis Report</span>
+                  <i class="right fas fa-angle-left"></i>
+                </a>
+
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/advanced.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Hourly Process</p>
+                    </a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a href="pages/forms/advanced.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Daily Process</p>
+                    </a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a href="pages/forms/advanced.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Predicative Outbound</p>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="pages/forms/advanced.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Progressive Outbound</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/forms/advanced.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Call Recoding</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/forms/advanced.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Dump Report</p>
+                    </a>
+                  </li>
+    
+                </ul>
+
+              </li>
+              
+              <li class="nav-item">
+                <a  class="nav-link">
+                    <i class="fas fa-file	nav-icon"></i>
+                  <span>Custom Report</span>
+                  <i class="right fas fa-angle-left"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/general.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Custom Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/forms/advanced.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manual Call Report</p>
+                    </a>
+                  </li>
+                </ul>
+    
+              </li>
+
+            </ul>
+      
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Administration
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Setting</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/data.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Modules</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/jsgrid.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>WebRTC Setting</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a [routerLink]="['/admin']" class="nav-link">
+                <i class="fas fa-phone nav-icon"></i>
+              <p>
+                Remote Agents
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a [routerLink]="['/admin/user']" class="nav-link">
+                    <i class="fas fa-user-plus nav-icon"></i>
+                  <span>Agents List</span>
+
+                </a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/admin/campaign']" class="nav-link">
+                  <i class="far fa-edit nav-icon"></i>
+                  <p>Extension Group List</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-music-note-list nav-icon"></i>
+              <p>
+                Recording Module
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Default Recording</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-envelope"></i>
+              <p>
+                Ommni Channel
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="fab fa-facebook-f nav-icon"></i>
+                     <p>Facebook</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="fab fa-twitter nav-icon"></i>      
+                  <p>Twitter</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="fab fa-whatsapp nav-icon"></i>
+                  <p>Whast Up</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="fab fa-linkedin nav-icon"></i>
+                  <p>LinkedIn</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+             <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Custom CRM
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Custom Web Page</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/data.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Client Contact Module</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a [routerLink]="['admin/contacts']" class="nav-link">
+              <i class="fas fa-address-book nav-icon"></i>
+              <p>
+                Contacts
+              </p>
+            </a>
+          </li>
+       
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>

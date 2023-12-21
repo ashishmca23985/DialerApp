@@ -1,0 +1,75 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">    
+        
+    <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3"> 
+        
+        <div class="row">                
+            <div class="iconmelon">
+                <img src="assets/homepage/img/avatar.svg " class="img-fluid" alt="logo" height="40px" width="100px" >
+        
+            </div>
+        
+        </div>
+        
+        <div class="panel panel-default"  >
+            <div class="panel-heading" style="background-color:white; background-image:linear-gradient(45deg,#EF413D 0%,#6A2A5B 100%);">
+                <div class="panel-title text-center">
+                    <span>
+                        Welcome to iAuto Dialer Solution !
+                    </span>
+
+                </div>
+            </div>     
+
+            <div class="panel-body" >
+
+                <form #form="ngForm" [formGroup]="userForm" (ngSubmit)="LoginUser()">
+                    <div class="mb-3 text-danger">
+                        {{error}}
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="" class="form-label">
+                            Username</label>
+                        <input type="text" name="username" class="form-control" formControlName="username" />
+                        <div *ngIf="userForm.controls['username'].errors && (userForm.controls['username'].dirty || form.submitted)"
+                            class="text-danger">
+                            <span [hidden]="!userForm.controls['username'].errors['required']">Please Enter username</span>
+                            <span [hidden]="!userForm.controls['username'].errors['email']">Please Enter correct email</span>
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control" formControlName="password">
+                        <div *ngIf="userForm.controls['password'].errors && (userForm.controls['password'].dirty || form.submitted)"
+                            class="text-danger">
+                            <span [hidden]="!userForm.controls['password'].errors['required']">Please Enter password</span>
+                        </div>
+                    </div>
+                 
+                    <div class="mb-3">
+                        <!-- Button -->
+                        <div class="col-sm-12 controls">
+                                
+                                    <button type="submit"  value="Login" class="btn btn-primary pull-left">
+                                        <i class="glyphicon glyphicon-log-in"></i> Log in</button>    
+                             
+                                        <button type="cancel"  value="Cancel" class="btn btn-danger pull-right"
+                                        [routerLink]="['/']">
+                                            <i class="glyphicon glyphicon-remove"></i> Cancel</button>   
+                                     
+                        </div>
+                    </div>
+
+                </form>     
+
+            </div>                     
+        </div>  
+    </div>
+</div>
+

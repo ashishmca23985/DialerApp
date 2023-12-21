@@ -1,0 +1,319 @@
+
+<head>
+
+</head>
+<body>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a [routerLink]="['/user']">Home</a></li>
+            <li class="breadcrumb-item active">Agent Dashboard</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-info">
+            <div class="inner">
+              <h3>150</h3>
+
+              <p>TOTAL CALLs</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-warning">
+            <div class="inner">
+              <h3>53</h3>
+
+              <p>INCOMING CALLs</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-angle-left"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-success">
+            <div class="inner">
+              <h3>53</h3>
+
+              <p>OUTGOING CALLs</p>
+            </div>
+            <div class="icon">
+              <i class="fas fa-arrow-circle-right"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="small-box bg-danger">
+            <div class="inner">
+              <h3>65</h3>
+
+              <p>TOTAL DURATION (Sec.)</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+  
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="info-box bg-info">
+            <span class="info-box-icon"><i class="far fa-comments"></i></span>
+            <div class="info-box-content">
+              <span class="info-box-text">Call Count</span>
+              <span class="info-box-number">120</span>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="info-box bg-warning">
+            <span class="info-box-icon"><i class="far fa-clock"></i></span>
+            <div class="info-box-content">
+              <span class="info-box-text">My Callback Count</span>
+              <span class="info-box-number">20</span>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="info-box bg-success">
+            <span class="info-box-icon"><i class="far fa-bell"></i></span>
+            <div class="info-box-content">
+              <span class="info-box-text">Followup Count</span>
+              <span class="info-box-number">15</span>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+          <!-- small box -->
+          <div class="info-box bg-danger">
+            <span class="info-box-icon"><i class="far fa-flag"></i></span>
+            <div class="info-box-content">
+              <span class="info-box-text">other</span>
+              <span class="info-box-number">26</span>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+      <!-- /.row -->
+      <!-- Main row -->
+      <div class="row">
+        <!-- Left col -->
+        <section class="col-lg-7 connectedSortable">
+            <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Agent Call Summary </h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <canvas id="agent-call-summary" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;">
+                </canvas>
+              </div>
+              <!-- /.card-body -->
+            </div>
+          
+          
+         
+        </section>
+        <!-- right col (We are only adding the ID to make the widgets sortable)-->
+        <section class="col-lg-5 connectedSortable">
+
+          
+          <div class="card card-info">
+            <div class="card-header border-0">
+              <h3 class="card-title">
+                <i class="fas fa-th mr-1"></i>
+                Agent Login Summary
+              </h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn bg-info btn-sm" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn bg-info btn-sm" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <canvas class="chart" id="agent-login-summary" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+            </div>
+            <!-- /.card-body -->
+            <!-- /.card-footer -->
+          </div>
+      
+         
+        </section>
+
+        <section class="col-lg-12 connectedSortable">
+          <div class="card card-info">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-chart-bar mr-1"></i>
+                Hourly Call Summary 
+              </h3>
+            </div><!-- /.card-header -->
+            <div class="card-body">
+              <div class="tab-content p-0">
+                <div class="" id="sales-chart" style="position: relative; height: 250px;">
+                  <canvas id="hourly-call-chart" height="250" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                </div>
+              </div>
+            </div><!-- /.card-body -->
+          </div>
+          
+        </section>
+        <section class="col-lg-12 connectedSortable">
+          <div class="card card-info">
+            <div class="card-header">
+              <h3 class="card-title">Recents Dialer Calls</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table m-0">
+                  <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Campaign</th>
+                    <th>Direction</th>
+                    <th>Dispostion</th>
+                    <th>Agent Dispostion</th>
+                    <th>Duration (Sec.)</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">Ashish Tomar</a></td>
+                    <td> 8588984649</td>
+                    <td>Test Campaiogn</td>
+                    <td>Outbound</td>
+                    <td><span class="badge badge-success">NO ANSWER</span></td>
+                    <td><span class="badge badge-success">NI</span></td>
+                    <td>
+                    <div class="sparkbar" data-color="#00a65a" data-height="20">45</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">Abhay Kumar</a></td>
+                    <td> 942541649</td>
+                    <td>Test Campaiogn</td>
+                    <td>Outbound</td>
+                    <td><span class="badge badge-success">ANSWER</span></td>
+                    <td><span class="badge badge-success">DEAD</span></td>
+                    <td>
+                    <div class="sparkbar" data-color="#00a65a" data-height="20">90</div>
+                    </td>  </tr>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">Surinder Singh</a></td>
+                    <td> 941250694</td>
+                    <td>Test Campaiogn</td>
+                    <td>Outbound</td>
+                    <td><span class="badge badge-success">ANSWER</span></td>
+                    <td><span class="badge badge-success">INTERSTED</span></td>
+                    <td>
+                    <div class="sparkbar" data-color="#00a65a" data-height="20">160</div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">Ashwani Kumar</a></td>
+                    <td> 9412586398</td>
+                    <td>Test Campaiogn</td>
+                    <td>Outbound</td>
+                    <td><span class="badge badge-success">NO ANSWER</span></td>
+                    <td><span class="badge badge-success">NI</span></td>
+                    <td>
+                    <div class="sparkbar" data-color="#00a65a" data-height="20">30</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">Prashant Singh</a></td>
+                    <td> 8599654789</td>
+                    <td>Test Campaiogn</td>
+                    <td>Outbound</td>
+                    <td><span class="badge badge-success">NO ANSWER</span></td>
+                    <td><span class="badge badge-success">NI</span></td>
+                    <td>
+                    <div class="sparkbar" data-color="#00a65a" data-height="20">12</div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.card-body -->
+            <!-- /.card-footer -->
+          </div>
+        </section>
+        <!-- right col -->
+      </div>
+      <!-- /.row (main row) -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+

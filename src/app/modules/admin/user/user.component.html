@@ -1,0 +1,1433 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header ">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Users Management</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Users Management</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+
+      <div class="card card-info">
+        <form>
+
+          <div class="row">
+            <!-- /.col -->
+            <div class="col-md-12">
+              <div class="card card-warning">
+                <div class="card-header p-2">
+                  <ul class="nav nav nav-tabs nav-justified">
+                    <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Users</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Phones</a>
+                    </li>
+                  </ul>
+                </div><!-- /.card-header -->
+                <div class="card-body">
+                  <div class="tab-content">
+                    <div class="active tab-pane" id="activity">
+                      <section class="content">
+                        <div class="container-fluid">
+                          
+                          <div style="border-bottom: 1.5rem;background-image: linear-gradient(45deg,#EF413D 0%,#6A2A5B 100%);">
+                            <a class="btn btn-primary" routerLink="/admin/user/add-user">
+                              <i class="fas fa-plus"></i> Add User</a>
+                         </div>
+                          <form>
+                            <table class="table table-striped table-bordered table-sm row-border hover"
+                            id="datatableexample">
+                            <thead>
+                              <tr>
+                                <th>User ID</th>
+                                <th>Full Name</th>
+                                <th>User Group</th>
+                                <th>Status</th>
+                                <th>Email</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                                <th>Action</th>
+  
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>5001</td>
+                                <td>Ashish Tomar</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>ashish@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+  
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5002</td>
+                                <td>Abhay Kumar</td>
+                                <td>AGENTS</td>
+                                <td>In-Active</td>
+                                <td>abhay@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5003</td>
+                                <td>Surinder Singh</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>sc@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5004</td>
+                                <td>Abhinav Kumar</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>abhinav@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5006</td>
+                                <td>Bhawesh Kumar</td>
+                                <td>AGENTS</td>
+                                <td>In-Active</td>
+                                <td>bhawesh@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5007</td>
+                                <td>HariOm</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>hari@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5008</td>
+                                <td>Puneet Singh</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>punieet@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5009</td>
+                                <td>Gyanesh Sharma</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>gyanesh@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5010</td>
+                                <td>Harmeet Singh</td>
+                                <td>AGENTS</td>
+                                <td>In-Active</td>
+                                <td>harmeet@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5001</td>
+                                <td>Ashish Tomar</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>ashish@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5002</td>
+                                <td>Abhay Kumar</td>
+                                <td>AGENTS</td>
+                                <td>In-Active</td>
+                                <td>abhay@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5003</td>
+                                <td>Surinder Singh</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>sc@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5004</td>
+                                <td>Abhinav Kumar</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>abhinav@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5006</td>
+                                <td>Bhawesh Kumar</td>
+                                <td>AGENTS</td>
+                                <td>In-Active</td>
+                                <td>bhawesh@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5007</td>
+                                <td>HariOm</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>hari@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5008</td>
+                                <td>Puneet Singh</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>punieet@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5009</td>
+                                <td>Gyanesh Sharma</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>gyanesh@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5010</td>
+                                <td>Harmeet Singh</td>
+                                <td>AGENTS</td>
+                                <td>In-Active</td>
+                                <td>harmeet@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+  
+                              <tr>
+                                <td>5001</td>
+                                <td>Ashish Tomar</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>ashish@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              <tr>
+                                <td>5001</td>
+                                <td>Ashish Tomar</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>ashish@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5001</td>
+                                <td>Ashish Tomar</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>ashish@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5001</td>
+                                <td>Ashish Tomar</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>ashish@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5001</td>
+                                <td>Ashish Tomar</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>ashish@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5001</td>
+                                <td>Ashish Tomar</td>
+                                <td>AGENTS</td>
+                                <td>Active</td>
+                                <td>ashish@gmail.com</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                                <td nowrap="" style="width:20%;" class=" dt-body-left">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                      aria-expanded="false">
+                                      Choose Action
+                                    </button>
+  
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="userlog">Agent Log - Agent Log</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="outbound">Agent Log - Outbound</a></li>
+                                      <li><a class="view-stats" href="#" data-user="agent001" data-name="Agent 001"
+                                          data-agentlog="inbound">Agent Log - Inbound</a></li>
+                                      <li><a class="emergency-logout" href="#" data-emergency-logout-username="agent001"
+                                          data-name="Agent 001">Emergency Logout</a></li>
+                                      <li class="divider"></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+  
+                            </tbody>
+  
+                          </table>
+                          </form>
+
+                        </div>
+                      </section>
+
+                    </div>
+                    <!-- /.tab-pane -->
+                    <div class="tab-pane" id="timeline">
+                      <section class="content">
+                        <div class="container-fluid">
+                          <div style="border-bottom: 1.5rem;background-image: linear-gradient(45deg,#EF413D 0%,#6A2A5B 100%);">
+                            <a class="btn btn-primary" routerLink="/admin/user/add-phone">
+                              <i class="fas fa-plus"></i> Add Phones</a>
+                         </div>
+           
+                          <form>
+                            <table class="table table-striped table-bordered table-sm row-border hover"
+                            id="datatableexample1">
+                            <thead>
+                              <tr>
+                                <th>Extension</th>
+                                <th>Protocol</th>
+                                <th>Server IP</th>
+                                <th>Status</th>
+                                <th>Voicemail</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                        
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>8001</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+  
+                                
+                              </tr>
+                              <tr>
+                                <td>8002</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+  
+                              </tr>
+                              <tr>
+                              <td>8003</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+  
+                              
+                              </tr>
+                              <tr>
+                                <td>8004</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8005</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8006</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8007</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8008</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8009</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8010</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8011</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8012</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8013</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8014</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8015</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8016</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8017</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8018</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+  
+                              <tr>
+                                <td>8019</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              <tr>
+                                <td>8020</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8021</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8022</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8023</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8024</td>
+                                <td>EXTERNAL</td>
+                                <td>127.0.0.1</td>
+                                <td>Active</td>
+                                <td>0</td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Edit"><button
+                                      class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                      data-target="#edit"><span class="far fa-edit"></span></button></p>
+                                </td>
+                                <td>
+                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button
+                                      class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                      data-target="#delete"><span class="far fa-trash-alt"></span></button></p>
+                                </td>
+                              </tr>
+  
+                            </tbody>
+  
+                          </table>
+                          </form>
+
+                        </div>
+                      </section>
+
+                    </div>
+                    <!-- /.tab-pane -->
+
+                    <!-- /.tab-pane -->
+                  </div>
+                  <!-- /.tab-content -->
+                </div><!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+
+        </form>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+ 
+
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
