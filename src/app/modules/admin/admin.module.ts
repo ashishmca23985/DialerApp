@@ -8,7 +8,7 @@ import { UserComponent } from './user/user.component';
 import { RolesComponent } from './roles/roles.component';
 import { AssignRightComponent } from './assign-right/assign-right.component';
 import { CampaignComponent } from './campaign/campaign.component';
-import { CampaignDetailsComponent } from './campaign-details/campaign-details.component';
+
 import { DispostionComponent } from './dispostion/dispostion.component';
 import { DispostionDetailsComponent } from './dispostion-details/dispostion-details.component';
 import { LeadListComponent } from './lead-list/lead-list.component';
@@ -66,6 +66,25 @@ import { ProfileComponent } from './profile/profile.component';
 import { DataTablesModule } from 'angular-datatables';
 import { AddUserComponent } from './user/add-user/add-user.component';
 import { EditUserComponent } from './user/edit-user/edit-user.component';
+import { AddPhoneComponent } from './user/add-phone/add-phone.component';
+import { EditPhoneComponent } from './user/edit-phone/edit-phone.component';
+import { AgentLogComponent } from './user/agent-log/agent-log.component';
+import { AgentLogInboundComponent } from './user/agent-log-inbound/agent-log-inbound.component';
+import { AgentLogOutboundComponent } from './user/agent-log-outbound/agent-log-outbound.component';
+import { AgentLogoutComponent } from './user/agent-logout/agent-logout.component';
+import { AddCampaignComponent } from './campaign/add-campaign/add-campaign.component';
+import { EditCampaignComponent } from './campaign/edit-campaign/edit-campaign.component';
+import { AddDispostionComponent } from './dispostion/add-dispostion/add-dispostion.component';
+import { EditDispostionComponent } from './dispostion/edit-dispostion/edit-dispostion.component';
+import { AddScriptComponent } from './agent-script/add-script/add-script.component';
+import { EditScriptComponent } from './agent-script/edit-script/edit-script.component';
+import { AddListComponent } from './lead-list/add-list/add-list.component';
+import { EditListComponent } from './lead-list/edit-list/edit-list.component';
+import { AddDncComponent } from './lead-list/add-dnc/add-dnc.component';
+import { AddNewLeadComponent } from './lead-list/add-new-lead/add-new-lead.component';
+import { UploadLeadComponent } from './lead-list/upload-lead/upload-lead.component';
+import { AddFilterComponent } from './dialing-filter/add-filter/add-filter.component';
+import { EditFilterComponent } from './dialing-filter/edit-filter/edit-filter.component';
 
 
 
@@ -77,7 +96,7 @@ import { EditUserComponent } from './user/edit-user/edit-user.component';
     RolesComponent,
     AssignRightComponent,
     CampaignComponent,
-    CampaignDetailsComponent,
+
     DispostionComponent,
     DispostionDetailsComponent,
     LeadListComponent,
@@ -132,6 +151,25 @@ import { EditUserComponent } from './user/edit-user/edit-user.component';
     ProfileComponent,
     AddUserComponent,
     EditUserComponent,
+    AddPhoneComponent,
+    EditPhoneComponent,
+    AgentLogComponent,
+    AgentLogInboundComponent,
+    AgentLogOutboundComponent,
+    AgentLogoutComponent,
+    AddCampaignComponent,
+    EditCampaignComponent,
+    AddDispostionComponent,
+    EditDispostionComponent,
+    AddScriptComponent,
+    EditScriptComponent,
+    AddListComponent,
+    EditListComponent,
+    AddDncComponent,
+    AddNewLeadComponent,
+    UploadLeadComponent,
+    AddFilterComponent,
+    EditFilterComponent,
     
     
   ],

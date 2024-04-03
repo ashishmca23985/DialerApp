@@ -23,7 +23,7 @@ export class AdminAuthGuard implements CanActivate {
       return true;
     }
     else {
-      this.router.navigate(['unauthorize']);
+      //this.router.navigate(['unauthorize']);
       return true;
     }
   }

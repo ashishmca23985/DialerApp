@@ -7,7 +7,6 @@ import { UserComponent } from './user/user.component';
 import { RolesComponent } from './roles/roles.component';
 import { AssignRightComponent } from './assign-right/assign-right.component';
 import { CampaignComponent } from './campaign/campaign.component';
-import { CampaignDetailsComponent } from './campaign-details/campaign-details.component';
 import { DispostionComponent } from './dispostion/dispostion.component';
 import { DispostionDetailsComponent } from './dispostion-details/dispostion-details.component';
 import { LeadListComponent } from './lead-list/lead-list.component';
@@ -57,6 +56,21 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
 import { ProfileComponent } from './profile/profile.component';
 import { AddUserComponent } from './user/add-user/add-user.component';
 import { EditUserComponent } from './user/edit-user/edit-user.component';
+import { AddPhoneComponent } from './user/add-phone/add-phone.component';
+import { EditPhoneComponent } from './user/edit-phone/edit-phone.component';
+import { AddCampaignComponent } from './campaign/add-campaign/add-campaign.component';
+import { EditCampaignComponent } from './campaign/edit-campaign/edit-campaign.component';
+import { AddDispostionComponent } from './dispostion/add-dispostion/add-dispostion.component';
+import { EditDispostionComponent } from './dispostion/edit-dispostion/edit-dispostion.component';
+import { AddScriptComponent } from './agent-script/add-script/add-script.component';
+import { EditScriptComponent } from './agent-script/edit-script/edit-script.component';
+import { AddListComponent } from './lead-list/add-list/add-list.component';
+import { EditListComponent } from './lead-list/edit-list/edit-list.component';
+import { AddDncComponent } from './lead-list/add-dnc/add-dnc.component';
+import { AddNewLeadComponent } from './lead-list/add-new-lead/add-new-lead.component';
+import { UploadLeadComponent } from './lead-list/upload-lead/upload-lead.component';
+import { AddFilterComponent } from './dialing-filter/add-filter/add-filter.component';
+import { EditFilterComponent } from './dialing-filter/edit-filter/edit-filter.component';
 
 const routes: Routes = [
     {
@@ -68,18 +82,45 @@ const routes: Routes = [
             { path: 'user', component: UserComponent },
             { path: 'user/add-user', component: AddUserComponent },
             { path: 'user/edit-user', component: EditUserComponent },
+            { path: 'user/add-phone', component: AddPhoneComponent },
+            { path: 'user/edit-phone', component: EditPhoneComponent },
             
+
+
             { path: 'roles', component: RolesComponent },
             { path: 'assign-right', component: AssignRightComponent },
             { path: 'campaign', component: CampaignComponent },
-            { path: 'campaign-details', component: CampaignDetailsComponent },
+            { path: 'campaign/add-campaign', component: AddCampaignComponent },
+            { path: 'campaign/edit-campaign', component: EditCampaignComponent }, 
+
             { path: 'CampaignSummary', component: CampaignSummaryComponent },
+
+
             { path: 'dispostion', component: DispostionComponent },
+            { path: 'dispostion/add-dispostion', component: AddDispostionComponent },
+            { path: 'dispostion/edit-dispostion', component: EditDispostionComponent },
+           
+
             { path: 'dispostion-details', component: DispostionDetailsComponent },
             { path: 'lead-list', component: LeadListComponent },
+            { path: 'lead-list/add-list', component: AddListComponent },
+            { path: 'lead-list/edit-list', component: EditListComponent },
+            { path: 'lead-list/add-dnc', component: AddDncComponent },
+            { path: 'lead-list/add-new-lead', component: AddNewLeadComponent },
+            { path: 'lead-list/upload-lead', component: UploadLeadComponent },
+            
+           
             { path: 'lead-list-details', component: LeadListDetailsComponent },
+
+
             { path: 'dialing-filter', component: DialingFilterComponent },
+            { path: 'dialing-filter/add-filter', component: AddFilterComponent },
+            { path: 'dialing-filter/edit-filter', component: EditFilterComponent },
+
             { path: 'agent-script', component: AgentScriptComponent },
+            { path: 'agent-script/add-script', component: AddScriptComponent },
+            { path: 'agent-script/edit-script', component: EditScriptComponent },
+            
             { path: 'inbound/group-list', component: GroupListComponent },
             { path: 'inbound/did-list', component: DidListComponent },
             { path: 'inboud/call-menu-list', component: CallMenuListComponent },

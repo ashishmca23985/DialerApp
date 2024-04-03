@@ -1,0 +1,142 @@
+<head>
+</head>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header ">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Add Dispostion</h1>
+          
+        </div>
+      
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a [routerLink]="['/admin/campaign']">Dispostion List</a></li>
+            <li class="breadcrumb-item active">Add Dispostion</li>
+          </ol>
+        </div>
+      </div>
+      
+    </div><!-- /.container-fluid -->
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+
+      <div class="card card-info">
+        <form>
+
+          <div class="row">
+            <!-- /.col -->
+            <div class="col-md-12">
+                <div class="panel-heading">
+                    <div class="btn-group">
+                        <a class="btn btn-primary" routerLink="['/admin/campaign']"> <i class="fa fa-list"></i> Dispostion List</a>
+                    </div>
+                </div>
+              <div class="card card-warning">
+                <div class="card-header p-2">
+                  <h6>Basic Settings</h6>
+                </div><!-- /.card-header -->
+                
+                <div class="card-body">
+                  <div class="tab-content">
+                    <div class="active tab-pane" id="activity">
+                      <section class="content">
+                        <div class="container-fluid">
+
+                          <form>
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Dispostion ID</label>
+                                <input type="input" class="form-control" id="inputEmail">
+                              </div>
+
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Dispostion Code</label>
+                                <input type="input" class="form-control" id="inputEmail">
+                              </div>
+                            
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Dispostion Name</label>
+                                <input type="input" class="form-control" id="inputEmail">
+                              </div>
+
+                               
+                              <div class="col-md-6">
+                                <label for="inputGender" class="form-label">Connect</label>
+                                <select id="inputState" class="form-select">
+                                    <option></option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                   
+                                  </select>
+                                </div>
+
+                              <div class="col-md-6">
+                                <label for="inputGender" class="form-label">CallBack</label>
+                                <select id="inputState" class="form-select">
+                                    <option></option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                   
+                                  </select>
+                                </div>
+
+                            
+                              <div class="col-md-6">
+                                <label for="inputState" class="form-label">Active</label>
+                                <select id="inputState" class="form-select">
+                                  <option></option>
+                                  <option>Yes</option>
+                                  <option>No</option>
+                                 
+                                </select>
+                              </div>
+                             
+                             
+                            </div>
+                            <div class="card-footer">
+                                
+                                <button type="submit" class="btn btn-info">
+                                  <i class="fas fa-save"></i> Save</button>
+                                  
+                                <button type="submit" class="btn btn-danger float-right">
+                                  <i class="fas fa-window-close"></i> Cancel</button>
+                              </div>
+
+                          </form>
+
+                        </div>
+                      </section>
+
+                    </div>
+            
+                 
+                    <!-- /.tab-pane -->
+                  </div>
+                  <!-- /.tab-content -->
+                </div><!-- /.card-body -->
+              </div>
+
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+
+        </form>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<body>
+</body>

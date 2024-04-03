@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataTablesModule } from 'angular-datatables';
 
 @Component({
   selector: 'app-agent-script',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgentScriptComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
 
+    setTimeout(()=>{   
+      $('#datatableexample').DataTable( {
+        pagingType: 'full_numbers',
+        pageLength: 5,
+        processing: true,
+        lengthMenu : [5,10, 15, 20],
+        
+    } );
+    }, 1);
+    
+   }
+  
   ngOnInit(): void {
+
+  
+    };
+  
   }
 
-}
+

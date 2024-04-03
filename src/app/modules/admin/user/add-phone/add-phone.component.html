@@ -1,0 +1,206 @@
+<head>
+</head>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header ">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Add Phones</h1>
+          
+        </div>
+      
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a routerLink="['/admin/user']">Phone List</a></li>
+            <li class="breadcrumb-item active">Add Phone</li>
+          </ol>
+        </div>
+      </div>
+      
+    </div><!-- /.container-fluid -->
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+
+      <div class="card card-info">
+        <form>
+
+          <div class="row">
+            <!-- /.col -->
+            <div class="col-md-12">
+                <div class="panel-heading">
+                    <div class="btn-group">
+                        <a class="btn btn-primary" routerLink="['/admin/user']"> <i class="fa fa-list"></i> Phone List</a>
+                    </div>
+                </div>
+              <div class="card card-warning">
+                <div class="card-header p-2">
+                  <h6>Basic Settings</h6>
+                </div><!-- /.card-header -->
+                
+                <div class="card-body">
+                  <div class="tab-content">
+                    <div class="active tab-pane" id="activity">
+                      <section class="content">
+                        <div class="container-fluid">
+
+                          <form>
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Phone Extension</label>
+                                <input type="input" class="form-control" id="inputEmail">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Dial Plan Number</label>
+                                <input type="password" class="form-control" id="inputmobilenumber">
+                              </div>
+
+
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Server IP</label>
+                                <input type="input" class="form-control" id="inputEmail">
+                              </div>
+
+                               
+                              <div class="col-md-6">
+                                <label for="inputGender" class="form-label">Active Account</label>
+                                <select id="inputGender" class="form-select">
+                                    <option>--Choose--</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                   
+                                </select>
+                              </div>
+
+                               <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Status</label>
+                                <select id="inputGender" class="form-select">
+                                    <option>--Choose--</option>
+                                    <option>Active</option>
+                                    <option>Suspend</option>
+                                    <option>Closed</option>
+                                    <option>Pending</option>
+                                    <option>Admin</option>
+                                   
+                                </select>
+                       
+                              </div>
+                              <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Full Name</label>
+                                <input type="number" class="form-control" id="inputalternatenumber">
+                              </div>
+                             
+                              <div class="col-md-6">
+                                <label for="inputGender" class="form-label">Client Protocol</label>
+                                <select id="inputGender" class="form-select">
+                                    <option>--Choose--</option>
+                                    <option>External</option>
+                                    <option>SIP</option>
+                                    <option>Zap</option>
+                                    <option>IAX2</option>
+                                </select>
+                              </div>
+                            
+                              <div class="col-md-6">
+                                <label for="inputState" class="form-label">Change Password</label>
+                                <select id="inputState" class="form-select">
+                                  <option>--Choose--</option>
+                                  <option>Yes</option>
+                                  <option>No</option>
+                                 
+                                </select>
+                              </div>
+                             
+                            </div>
+                          </form>
+
+                        </div>
+                      </section>
+
+                    </div>
+            
+                 
+                    <!-- /.tab-pane -->
+                  </div>
+                  <!-- /.tab-content -->
+                </div><!-- /.card-body -->
+              </div>
+
+              <div class="card card-warning">
+                <div class="card-header p-2">
+              <h6>Advance Settings</h6>
+                </div><!-- /.card-header -->
+                
+                <div class="card-body">
+                  <div class="tab-content">
+                    <div class="active tab-pane" id="activity">
+                      <section class="content">
+                        <div class="container-fluid">
+
+                          <form>
+                            <div class="row">
+
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Phone IP Address</label>
+                                <input type="input" class="form-control" id="inputEmail">      
+                            </div>
+                              <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Computer IP Address</label>
+                                <input type="input" class="form-control" id="inputEmail">
+                              </div>
+
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">New Message</label>
+                                <input type="input" class="form-control" id="inputEmail">      
+                            </div>
+                              <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Old Message</label>
+                                <input type="input" class="form-control" id="inputEmail">
+                              </div>
+
+
+                              <div class="card-footer">
+                                
+                                <button type="submit" class="btn btn-info">
+                                  <i class="fas fa-save"></i> Save</button>
+                                  
+                                <button type="submit" class="btn btn-danger float-right">
+                                  <i class="fas fa-window-close"></i> Cancel</button>
+                              </div>
+
+                            </div>
+                          </form>
+
+                        </div>
+                      </section>
+
+                    </div>
+            
+                 
+                    <!-- /.tab-pane -->
+                  </div>
+                  <!-- /.tab-content -->
+                </div><!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+
+        </form>
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<body>
+</body>
